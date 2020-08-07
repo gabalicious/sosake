@@ -59871,7 +59871,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var vue_1 = __importDefault(require("vue"));
 
-var vm = vue_1.default.component("app-header", {
+var vm = vue_1["default"].component("app-header", {
   data: function data() {
     return {};
   },
@@ -59884,7 +59884,7 @@ var vm = vue_1.default.component("app-header", {
     }
   }
 });
-exports.default = vm;
+exports["default"] = vm;
         var $5dfe2c = exports.default || module.exports;
       
       if (typeof $5dfe2c === 'function') {
@@ -60055,7 +60055,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var vue_1 = __importDefault(require("vue"));
 
-var vm = vue_1.default.component("app-footer", {
+var vm = vue_1["default"].component("app-footer", {
   data: function data() {
     return {
       year: new Date().getFullYear()
@@ -60067,7 +60067,7 @@ var vm = vue_1.default.component("app-footer", {
     }
   }
 });
-exports.default = vm;
+exports["default"] = vm;
         var $96f7eb = exports.default || module.exports;
       
       if (typeof $96f7eb === 'function') {
@@ -60335,19 +60335,19 @@ var AppHeader_vue_1 = __importDefault(require("./AppHeader.vue"));
 
 var AppFooter_vue_1 = __importDefault(require("./AppFooter.vue"));
 
-var vm = vue_1.default.component("app-main", {
+var vm = vue_1["default"].component("app-main", {
   computed: {},
   components: {
     child: {
-      AppHeader: AppHeader_vue_1.default,
-      AppFooter: AppFooter_vue_1.default
+      AppHeader: AppHeader_vue_1["default"],
+      AppFooter: AppFooter_vue_1["default"]
     }
   },
   props: {
     resumeId: String
   }
 });
-exports.default = vm;
+exports["default"] = vm;
         var $472c80 = exports.default || module.exports;
       
       if (typeof $472c80 === 'function') {
@@ -60419,10 +60419,10 @@ var vue_1 = __importDefault(require("vue"));
 
 var AppMain_vue_1 = __importDefault(require("./components/AppMain.vue"));
 
-exports.default = vue_1.default.extend({
+exports["default"] = vue_1["default"].extend({
   components: {
     child: {
-      AppMain: AppMain_vue_1.default
+      AppMain: AppMain_vue_1["default"]
     }
   }
 });
@@ -61878,19 +61878,19 @@ var cover_png_3 = __importDefault(require("/images/logo/cover.png"));
 
 var cover_png_4 = __importDefault(require("/images/logo/cover.png"));
 
-vue_1.default.use(vuex_1.default);
+vue_1["default"].use(vuex_1["default"]);
 var menuData = [{
   category: "pizza",
   items: [{
     name: "Regular Slice",
     price: "2.95",
     foodType: "pizza",
-    imgUrl: cover_png_3.default
+    imgUrl: cover_png_3["default"]
   }, {
     name: "Sqaure Slice",
     price: "2.95",
     foodType: "pizza",
-    imgUrl: cover_png_4.default
+    imgUrl: cover_png_4["default"]
   }]
 }, {
   category: "pasta",
@@ -61898,15 +61898,15 @@ var menuData = [{
     name: "Penne Pomodoro",
     price: "2.95",
     foodType: "pasta",
-    imgUrl: cover_png_1.default
+    imgUrl: cover_png_1["default"]
   }, {
     name: "Penne Cacio e pepe ",
     price: "2.95",
     foodType: "pasta",
-    imgUrl: cover_png_2.default
+    imgUrl: cover_png_2["default"]
   }]
 }];
-exports.default = new vuex_1.default.Store({
+exports["default"] = new vuex_1["default"].Store({
   state: {
     menuData: [],
     cartData: []
@@ -64864,11 +64864,11 @@ var AppMain_vue_1 = __importDefault(require("../components/AppMain.vue"));
 
 var AppHeader_vue_1 = __importDefault(require("../components/AppHeader.vue"));
 
-exports.default = vue_1.default.extend({
+exports["default"] = vue_1["default"].extend({
   components: {
     child: {
-      AppMain: AppMain_vue_1.default,
-      AppHeader: AppHeader_vue_1.default
+      AppMain: AppMain_vue_1["default"],
+      AppHeader: AppHeader_vue_1["default"]
     }
   },
   data: function data() {
@@ -65039,10 +65039,10 @@ var vue_1 = __importDefault(require("vue"));
 
 var AppHeader_vue_1 = __importDefault(require("../components/AppHeader.vue"));
 
-var vm = vue_1.default.component("login-view", {
+var vm = vue_1["default"].component("login-view", {
   components: {
     child: {
-      AppHeader: AppHeader_vue_1.default
+      AppHeader: AppHeader_vue_1["default"]
     }
   },
   data: function data() {
@@ -65063,7 +65063,7 @@ var vm = vue_1.default.component("login-view", {
     }
   }
 });
-exports.default = vm;
+exports["default"] = vm;
         var $672cf2 = exports.default || module.exports;
       
       if (typeof $672cf2 === 'function') {
@@ -65318,10 +65318,10 @@ var vue_1 = __importDefault(require("vue"));
 
 var AppHeader_vue_1 = __importDefault(require("../components/AppHeader.vue"));
 
-var vm = vue_1.default.component("register-view", {
+var vm = vue_1["default"].component("register-view", {
   components: {
     child: {
-      AppHeader: AppHeader_vue_1.default
+      AppHeader: AppHeader_vue_1["default"]
     }
   },
   data: function data() {
@@ -65342,7 +65342,7 @@ var vm = vue_1.default.component("register-view", {
     }
   }
 });
-exports.default = vm;
+exports["default"] = vm;
         var $8d5f4c = exports.default || module.exports;
       
       if (typeof $8d5f4c === 'function') {
@@ -65798,7 +65798,7 @@ var _default = {
     },
     noBody: {
       type: Boolean,
-      default: false,
+      "default": false,
       description: "Whether card should have wrapper body class"
     },
     bodyClasses: {
@@ -66356,25 +66356,25 @@ var bg5_jpg_1 = __importDefault(require("/images/bg5.jpg"));
 
 var bg6_jpg_1 = __importDefault(require("/images/bg6.jpg"));
 
-var vm = vue_1.default.component("login-view", {
+var vm = vue_1["default"].component("login-view", {
   components: {
-    AppHeader: AppHeader_vue_1.default,
-    Testimonials: Testimonials_vue_1.default,
-    AboutUsShort: AboutUsShort_vue_1.default
+    AppHeader: AppHeader_vue_1["default"],
+    Testimonials: Testimonials_vue_1["default"],
+    AboutUsShort: AboutUsShort_vue_1["default"]
   },
   computed: {
     cssVars: function cssVars() {
       return {
-        "--bg-url1-xl": "url(" + bg_jpg_1.default + ")",
-        "--bg-url1-md": "url(" + bg_md_jpg_1.default + ")",
-        "--bg-url1-sm": "url(" + bg_sm_jpg_1.default + ")",
-        "--bg-url2-xl": "url(" + bg_2_jpg_1.default + ")",
-        "--bg-url2-md": "url(" + bg_2_md_jpg_1.default + ")",
-        "--bg-url2-sm": "url(" + bg_2_sm_jpg_1.default + ")",
-        "--bg-url3-xl": "url(" + bg3_jpg_1.default + ")",
-        "--bg-url4-xl": "url(" + bg4_jpg_1.default + ")",
-        "--bg-url5-xl": "url(" + bg5_jpg_1.default + ")",
-        "--bg-url6-xl": "url(" + bg6_jpg_1.default + ")"
+        "--bg-url1-xl": "url(" + bg_jpg_1["default"] + ")",
+        "--bg-url1-md": "url(" + bg_md_jpg_1["default"] + ")",
+        "--bg-url1-sm": "url(" + bg_sm_jpg_1["default"] + ")",
+        "--bg-url2-xl": "url(" + bg_2_jpg_1["default"] + ")",
+        "--bg-url2-md": "url(" + bg_2_md_jpg_1["default"] + ")",
+        "--bg-url2-sm": "url(" + bg_2_sm_jpg_1["default"] + ")",
+        "--bg-url3-xl": "url(" + bg3_jpg_1["default"] + ")",
+        "--bg-url4-xl": "url(" + bg4_jpg_1["default"] + ")",
+        "--bg-url5-xl": "url(" + bg5_jpg_1["default"] + ")",
+        "--bg-url6-xl": "url(" + bg6_jpg_1["default"] + ")"
       };
     }
   },
@@ -66382,7 +66382,7 @@ var vm = vue_1.default.component("login-view", {
     return {};
   }
 });
-exports.default = vm;
+exports["default"] = vm;
         var $65dda2 = exports.default || module.exports;
       
       if (typeof $65dda2 === 'function') {
@@ -66551,8 +66551,8 @@ var vue_1 = __importDefault(require("vue"));
 
 var vue_router_1 = __importDefault(require("vue-router"));
 
-vue_1.default.use(vue_router_1.default);
-var router = new vue_router_1.default({
+vue_1["default"].use(vue_router_1["default"]);
+var router = new vue_router_1["default"]({
   mode: 'history',
   routes: [{
     path: '/dashboard',
@@ -66596,7 +66596,7 @@ var router = new vue_router_1.default({
 //   }
 // })
 
-exports.default = router;
+exports["default"] = router;
 },{"vue":"../node_modules/vue/dist/vue.runtime.esm.js","vue-router":"../node_modules/vue-router/dist/vue-router.esm.js","../views/dashboard":"views/dashboard.vue","../views/login":"views/login.vue","../views/register":"views/register.vue","../views/cover":"views/cover.vue"}],"index.ts":[function(require,module,exports) {
 "use strict"; // index.ts
 
@@ -66622,18 +66622,18 @@ var router_1 = __importDefault(require("./router"));
 
 var vuex_1 = __importDefault(require("vuex"));
 
-vue_1.default.use(vuex_1.default);
-vue_1.default.use(bootstrap_vue_1.default);
-new vue_1.default({
+vue_1["default"].use(vuex_1["default"]);
+vue_1["default"].use(bootstrap_vue_1["default"]);
+new vue_1["default"]({
   el: '#app',
-  store: store_1.default,
+  store: store_1["default"],
   beforeCreate: function beforeCreate() {// this.$store.commit('initialiseSelection');
     // this.$store.commit('initialiseYaml');
   },
   render: function render(h) {
-    return h(App_vue_1.default);
+    return h(App_vue_1["default"]);
   },
-  router: router_1.default
+  router: router_1["default"]
 });
 },{"vue":"../node_modules/vue/dist/vue.runtime.esm.js","bootstrap-vue":"../node_modules/bootstrap-vue/esm/index.js","./App.vue":"App.vue","./store":"store/index.ts","./router":"router/index.ts","vuex":"../node_modules/vuex/dist/vuex.esm.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -66663,7 +66663,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63499" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49642" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
