@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Jellee-Roman
+font link: https://hanken.co/product/jellee/
+font author: Hanken Design Co.
+font author site: https://hanken.co/
+
+
+icon designer: Cristiano Zoucas
+icon designer link: /cristiano.zoucas
+        
+{"bg":"#341952","icon":"#E96D77","font":"#FFFFFF","slogan":"#ffffff"}
+      

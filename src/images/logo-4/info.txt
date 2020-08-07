@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Quantico-Regular
+font link: https://fonts.google.com/specimen/Quantico
+font author: MADType
+font author site: http://www.madtype.com/
+
+
+icon designer: Cristiano Zoucas
+icon designer link: /cristiano.zoucas
+        
+{"bg":"transparent","font":"#000000","icon-gradient-0":"#30092A","icon-gradient-1":"#CB3C61","slogan":"#141414"}
+      

@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: EpoClassic-Lig
+font link: https://www.fontspring.com/fonts/hoftype/epocaclassic/epoca-classic-light
+font author: Hoftype
+font author site: http://www.hoftype.com/
+
+
+icon designer: Cristiano Zoucas
+icon designer link: /cristiano.zoucas
+        
+{"bg":"#3B0548","icon":"#D32E6B","font":"#D32E6B","slogan":"#e7427f"}
+      
