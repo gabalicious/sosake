@@ -1,15 +1,16 @@
 {
   "name": "sosake",
-  "homepage": "https://gabalicious.github.io/sosake",
+  "homepage": "https://gabalicious.github.io/",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.ts",
   "scripts": {
     "start": "parcel serve ./src/index.html",
     "build": "parcel build ./src/index.html --public-url ./",
-    "build2": "parcel watch ./src/index.html --public-url /sosake/",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "predeploy:gh": "rm -rf dist && parcel build ./src/index.html --public-url /sosake",
+    "deploy:gh": "gh-pages -d dist",
+    "predeploy": "rm -rf dist && parcel build ./src/index.html",
+    "deploy": "surge dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "browserslist": "> 1%, last 2 versions, not ie <= 11",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.0",
+    "autoprefixer": "^9.8.6",
     "sass": "^1.26.10",
     "typescript": "^3.9.7",
     "vue-template-compiler": "^2.6.11"
