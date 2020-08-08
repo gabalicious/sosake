@@ -112,7 +112,8 @@ section.section {
   margin: 5em 0;
 }
 .card {
-  background: rgb(233, 109, 119);
+  background: linear-gradient(rgb(233, 82, 95), rgb(210, 100, 95));
+
   border: 1px solid white;
   color: white;
   width: 100%;

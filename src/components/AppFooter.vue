@@ -3,7 +3,9 @@
     <div class="container">
       <div class="row row-grid align-items-center my-md">
         <div class="col-lg-6 footer-reposition">
-          <h5 class="text-dark mb-2">Thank you for supporting us during these tough times!</h5>
+          <h5
+            class="text-dark-fordark-bg mb-2"
+          >Thank you for supporting us during these tough times!</h5>
           <h6
             class="text-white mb-0 font-weight-light"
           >Always receive 10% off when ordering on our website.</h6>
@@ -111,8 +113,7 @@ export default vm;
 <style lang="scss" scoped>
 footer {
   padding: 2.5em 0;
-  background: rgb(233, 109, 119)
-    linear-gradient(rgb(203, 60, 97), rgb(48, 9, 42));
+  background: linear-gradient(rgb(233, 82, 95), rgb(128, 10, 41));
   a {
     color: white;
   }
@@ -145,6 +146,10 @@ footer {
   }
   a.btn-icon-only {
     line-height: 2.5;
+  }
+  .text-dark-fordark-bg {
+    text-shadow: 2px 2px #000000;
+    color: rgb(255, 238, 142) !important;
   }
 }
 

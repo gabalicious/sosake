@@ -8,14 +8,14 @@
           <b-col class="login-container" xl="4">
             <h3 class="text-dark">Login</h3>
             <div class="center-buttons">
-              <b-button variant="dark" v-on:click="makeToast()">
-                <i class="fab fa-github"></i> Github
+              <b-button variant="primary" v-on:click="makeToast()">
+                <i class="fab fa-facebook"></i> Facebook
               </b-button>
               <b-button v-on:click="makeToast()" variant="danger">
                 <i class="fab fa-google"></i> Google
               </b-button>
-              <b-button v-on:click="makeToast()" variant="primary">
-                <i class="fab fa-linkedin"></i> Linkedin
+              <b-button v-on:click="makeToast()" variant="dark">
+                <i class="fab fa-apple"></i> Apple
               </b-button>
             </div>
             <div class="division">
@@ -32,12 +32,14 @@
                 <b-form-group id="input-group-2" label="Password" label-for="input-2">
                   <b-form-input disabled id="input-2" required placeholder="Enter name"></b-form-input>
                 </b-form-group>
+                <div class="center-buttons no-wrap">
+                  <b-button v-on:click="makeToast()" variant="primary">Submit</b-button>
 
-                <b-button v-on:click="makeToast()" type="submit" variant="primary">Submit</b-button>
-                <b-button to="/resumedemo" variant="warning">
-                  <i class="fas fa-user-circle shadow"></i>
-                  <span class="text-white shadow">Try Test Account</span>
-                </b-button>
+                  <b-button to="resumedemo" variant="warning">
+                    <i class="fas fa-user-circle shadow"></i>
+                    <span class="text-white shadow">Try Test Account</span>
+                  </b-button>
+                </div>
               </b-form>
             </div>
           </b-col>
@@ -76,11 +78,12 @@ export default vm;
 
 <style lang="scss" scoped>
 .full-height {
-  height: calc(100vh - 63px);
+  height: calc(100vh);
   justify-content: center;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+  background: black;
 }
 .login-container {
   border-radius: 7px;
@@ -110,8 +113,26 @@ button,
 a.btn {
   margin-top: 15px;
 }
+button {
+  width: 50%;
+}
 .center-buttons {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  a,
+  button {
+    width: 100%;
+  }
+}
+.center-buttons.no-wrap {
+  flex-wrap: nowrap;
+
+  .btn {
+    width: 50%;
+  }
+  .btn + .btn {
+    margin-left: 5px;
+  }
 }
 </style>
