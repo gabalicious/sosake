@@ -1,7 +1,7 @@
 <template>
   <header class="app-header">
-    <b-container fluid :style="{padding: 0}">
-      <b-navbar toggleable="lg" type="transparent" variant="transparent">
+    <b-container class="app-header-container" fluid="sm" :style="{padding: 0}">
+      <b-navbar toggleable="lg" type="dark" variant="transparent">
         <b-navbar-brand to="/">
           <img src="/images/logo/vector/default-monochrome.svg" alt />
         </b-navbar-brand>
@@ -63,12 +63,16 @@ export default vm;
 .app-header {
   position: absolute;
   width: 100%;
+  z-index: 2;
+}
+.app-header-container {
+  padding: 0 100px;
 }
 a {
   color: white;
 }
 img {
   height: 20px;
-  width: fit-content;
+  width: 100px;
 }
 </style>

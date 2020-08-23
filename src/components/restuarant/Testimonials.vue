@@ -6,13 +6,13 @@
         <div class="col-lg-4">
           <div class="row row-grid">
             <card class="border-0" shadow body-classes="py-5">
-              <p>This place is beautifully, clean and modern. I love the how it reminds me of Italy...</p>
+              <p>This place is beautiful, clean, and modern. I love the how it reminds me of Japan...</p>
             </card>
             <div class="row review">
-              <div class="col-lg-4 col-3 col-md-2">
+              <div class="col-lg-4 col-6 col-md-2">
                 <img src="/images/profiles/profile1.jpg" alt />
               </div>
-              <div class="col-5 col-sm-5 col-md-4 col-lg-8">
+              <div class="col-6 col-sm-5 col-md-4 col-lg-8">
                 <p>
                   <span class="review-body">SOL C.</span>
                   <br />
@@ -35,13 +35,13 @@
         <div class="col-lg-4">
           <div class="row row-grid">
             <card class="border-0" shadow body-classes="py-5">
-              <p>Great Italian food. The love is REAL. The staff is nice. I order from HaVilla almost everyday...</p>
+              <p>Great Japanse food. The love is REAL. The staff is nice. I order from SaSake everyday...</p>
             </card>
             <div class="row review">
-              <div class="col-lg-4 col-3 col-md-2">
+              <div class="col-lg-4 col-6 col-md-2">
                 <img src="/images/profiles/profile4.jpg" alt />
               </div>
-              <div class="col-5 col-sm-5 col-md-4 col-lg-8">
+              <div class="col-6 col-sm-5 col-md-4 col-lg-8">
                 <p>
                   <span class="review-body">SOL C.</span>
                   <br />
@@ -64,13 +64,13 @@
         <div class="col-lg-4">
           <div class="row row-grid">
             <card class="border-0" shadow body-classes="py-5">
-              <p>Food here is amazing. The grilled chicken wraps, Caesar Salad, and grandma slices...</p>
+              <p>Food here is amazing. The Grilled Shrimp Special, Pow Salad, and Pow Sushi...</p>
             </card>
             <div class="row review">
-              <div class="col-lg-4 col-3 col-md-2">
+              <div class="col-lg-4 col-6 col-md-2">
                 <img src="/images/profiles/profile3.jpg" alt />
               </div>
-              <div class="col-5 col-sm-5 col-md-4 col-lg-8">
+              <div class="col-6 col-sm-5 col-md-4 col-lg-8">
                 <p>
                   <span class="review-body">SOL C.</span>
                   <br />
@@ -141,7 +141,7 @@ h1 {
   text-align: center;
 }
 img {
-  max-width: -webkit-fill-available;
+  max-width: 100%;
   border-radius: 50%;
   width: 100px;
   height: 100px;

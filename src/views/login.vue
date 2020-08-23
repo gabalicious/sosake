@@ -15,7 +15,7 @@
                 <i class="fab fa-google"></i> Google
               </b-button>
               <b-button v-on:click="makeToast()" variant="dark">
-                <i class="fab fa-apple"></i> Apple
+                <i class="fab fa-apple"></i> Sign in with Apple
               </b-button>
             </div>
             <div class="division">

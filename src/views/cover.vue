@@ -20,7 +20,7 @@
     </div>
     <aboutus-short></aboutus-short>
     <testimonials></testimonials>
-    <app-footer></app-footer>
+    <!-- <app-footer></app-footer> -->
   </div>
 </template>
 
@@ -101,10 +101,13 @@ export default vm;
 .cover-container {
   // background: #dc3546d3;
   padding: 1.75rem;
+  text-align: center;
   // margin-bottom: 33%;
   border-radius: 5px;
   img {
     filter: brightness(55%);
+    width: 100%;
+    max-height: 50vh;
   }
 }
 </style>

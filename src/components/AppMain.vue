@@ -1,31 +1,13 @@
 <template>
   <span class="main-container">
-    <main class="main-inner-container">
-      <app-header></app-header>
-
-      <resume-footer></resume-footer>
-    </main>
+    <main class="main-inner-container"></main>
   </span>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import AppHeader from "./AppHeader.vue";
-import AppFooter from "./AppFooter.vue";
 
-let vm = Vue.component("app-main", {
-  computed: {},
-
-  components: {
-    child: {
-      AppHeader,
-      AppFooter,
-    },
-  },
-  props: {
-    resumeId: String,
-  },
-});
+let vm = Vue.component("app-main", {});
 
 export default vm;
 </script>

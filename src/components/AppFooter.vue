@@ -54,19 +54,23 @@
         </div>
       </div>
       <hr />
-      <div class="row align-items-center justify-content-md-between">
-        <div class="col-md-3">
+      <div class="row align-items-center d-flex justify-content-md-between">
+        <div class="col-md-3 col-sm-12">
           <div class="copyright">
             <a href="#" target="_blank" rel="noopener">
               <img src="/images/logo-4/vector/default-monochrome-white.svg" />
             </a>
-            <span class="text-white">All Rights Reserved &copy; {{year}}</span>
+            <div class="text-white">
+              <span>All Rights Reserved &copy; {{year}}</span>
+            </div>
             <br />
-            <span class="text-white">Powered by Gaba Digital</span>
+            <div class="text-white">
+              <span>Powered by Gaba Digital</span>
+            </div>
           </div>
         </div>
-        <div class="col-md-9">
-          <ul class="nav nav-footer justify-content-end">
+        <div class="col-md-9 col-sm-12">
+          <ul class="nav nav-footer d-flex justify-content-center justify-content-md-end">
             <li class="nav-item">
               <router-link to="/" slot="title" href="#" class="nav-link" role="button">
                 <span class="nav-link-inner--text">Home</span>
@@ -154,8 +158,15 @@ footer {
 }
 
 .footer-reposition {
-  // position: relative;
-  // bottom: 75px;
+  position: relative;
+  font-size: min(max(12px, 1vw), 16px);
+  margin-bottom: 1em;
+  h5 {
+    font-size: min(max(14px, 1vw), 20px);
+  }
+  h6 {
+    font-size: min(max(13px, 1vw), 17px);
+  }
 }
 
 .copyright {
@@ -163,12 +174,20 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
 
-  a {
-    margin-bottom: 1em;
+  a,
+  div {
+    margin-bottom: 0.33em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: min(max(12px, 1vw), 16px);
   }
 
   img {
+    margin-bottom: 0.33em;
+
     width: 100%;
+    max-width: 30vw;
   }
 }
 </style>

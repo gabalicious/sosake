@@ -7,14 +7,17 @@
             <div class="col col-lg-6">
               <card class="border-0" shadow body-classes="py-5">
                 <h6 class="text-dark text-uppercase">Contact Us</h6>
-                <p class="description mt-3">
-                  Argon is a great free UI package based on Bootstrap 4
-                  that includes the most important components and features.
-                </p>
+                <p
+                  class="description mt-3"
+                >SoSake is a great Japanese restuarant. We hope to brighten your day with our delicious food.</p>
                 <form>
-                  <base-input placeholder="Name"></base-input>
-                  <base-input placeholder="Phone #"></base-input>
-                  <base-input placeholder="Email"></base-input>
+                  <label for="range-2">Name</label>
+                  <b-form-input class placeholder="Name"></b-form-input>
+                  <label for="range-2">Phone #</label>
+                  <b-form-input class placeholder="Phone #"></b-form-input>
+                  <label for="range-2">Email</label>
+                  <b-form-input class placeholder="Email"></b-form-input>
+                  <label for="range-2">Inquiry</label>
 
                   <textarea
                     class="form-control"
@@ -24,7 +27,7 @@
                   ></textarea>
                   <br />
                   <div>
-                    <base-button block type="danger">Submit</base-button>
+                    <button class="btn btn-danger">Submit</button>
                   </div>
                 </form>
               </card>
@@ -34,7 +37,7 @@
                 <h6 class="text-dark text-uppercase">Info</h6>
                 <p class="description mt-3">Phone number: +1-555-123-4567</p>
                 <p class="description mt-3">Address: 123 All Right DR. Brooklyn, NY 11234</p>
-                <img src="/img/maps-placeholder.png" alt />
+                <img src="/images/maps-placeholder.png" alt />
               </card>
             </div>
           </div>
@@ -54,8 +57,14 @@ export default Vue.component("contactus-form", {
 });
 </script>
 <style lang="scss" scoped>
+label {
+  margin: 0.75rem 0rem 0rem 0.25rem;
+}
 img {
-  max-width: -webkit-fill-available;
+  max-width: 100%;
+  max-width: -moz-available; /* WebKit-based browsers will ignore this. */
+  max-width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  max-width: fill-available;
 }
 .row {
   display: flex;

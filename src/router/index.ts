@@ -1,41 +1,79 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import Vue from "vue";
+import Router from "vue-router";
+import AppHeader from "/components/AppHeader";
+import AppFooter from "/components/AppFooter";
 
-Vue.use(VueRouter);
+import Home from "/views/cover.vue";
+import AboutUs from "/views/aboutus.vue";
+import ContactUs from "/views/contactus.vue";
+import Order from "/views/order.vue";
+import Register from "/views/register.vue";
+import Login from "/views/login.vue";
 
-let router = new VueRouter({
-  mode: 'history',
+Vue.use(Router);
+
+export default new Router({
+  linkExactActiveClass: "active",
   routes: [
     {
-      path: '/dashboard',
-      component: () => import('../views/dashboard'),
+      path: "/",
+      name: "home",
+      components: {
+        header: AppHeader,
+        default: Home,
+        footer: AppFooter,
+      },
     },
     {
-      path: '/login',
-      component: () => import('../views/login'),
+      path: "/aboutus",
+      name: "About Us",
+      components: {
+        header: AppHeader,
+        default: AboutUs,
+        footer: AppFooter,
+      },
     },
     {
-      path: '/register',
-      component: () => import('../views/register'),
+      path: "/contactus",
+      name: "Contact Us",
+      components: {
+        header: AppHeader,
+        default: ContactUs,
+        footer: AppFooter,
+      },
     },
     {
-      path: '/',
-      component: () => import('../views/cover'),
+      path: "/order",
+      name: "Order",
+      components: {
+        header: AppHeader,
+        default: Order,
+        footer: AppFooter,
+      },
+    },
+    {
+      path: "/login",
+      name: "Login",
+      components: {
+        header: AppHeader,
+        default: Login,
+        footer: AppFooter,
+      },
+    }, {
+      path: "/register",
+      name: "Register",
+      components: {
+        header: AppHeader,
+        default: Register,
+        footer: AppFooter,
+      },
+    },
+  ],
+  scrollBehavior: (to) => {
+    if (to.hash) {
+      return { selector: to.hash };
+    } else {
+      return { x: 0, y: 0 };
     }
-  ]
+  },
 });
-
-// router.beforeEach((to, from, next) => {
-//   let access_token = Vue.cookies.keys
-
-//   // if logged out
-//   if (access_token().length < 2 && ((to.path != '/login')) && ((to.path != '/signup')) && ((to.path != '/maps/1'))) {
-//     next({
-//       path: '/login',
-//       query: { redirect: to.fullPath }
-//     })
-//   } else {
-//     next()
-//   }
-// })
-export default router;
