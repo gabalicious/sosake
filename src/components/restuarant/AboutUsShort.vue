@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-7">
           <div class="row row-grid">
-            <img :src="IMG" alt />
+            <img class="img-fluid" :src="IMG" alt />
           </div>
         </div>
         <div class="col-lg-5">
@@ -51,11 +51,7 @@ section.section {
   padding-top: 0;
 }
 img {
-  max-width: 100%;
-  max-width: -moz-available; /* WebKit-based browsers will ignore this. */
-  max-width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-  max-width: fill-available;
-  border-radius: 25px;
+  align-self: flex-start;
 }
 .row-grid {
   padding: 1.2em;
